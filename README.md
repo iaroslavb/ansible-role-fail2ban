@@ -1,25 +1,34 @@
-Role Name
+<img style="float:left" alight="left" height="128px" width="128px" src="https://github.com/iaroslavb/ansible-role-fail2ban/raw/master/fail2ban_logo.png">
+
+Ansible Role: Fail2ban
 =========
 
-A brief description of the role goes here.
+[![Build Status](https://img.shields.io/travis/iaroslavb/ansible-role-fail2ban/master.svg?style=for-the-badge)](https://travis-ci.org/iaroslavb/ansible-role-fail2ban)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](https://raw.githubusercontent.com/iaroslavb/ansible-role-fail2ban/master/LICENSE)
+
+Ansible role for installing and configuring fail2ban service on Ubuntu Linux
 
 Requirements
 ------------
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+None
 
 Role Variables
 --------------
-
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+```
+ssh_bantime - ban time for sshd service
+```
 
 Dependencies
 ------------
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+None
+
 
 Example Playbook
 ----------------
+
+TODO
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
@@ -30,9 +39,9 @@ Including an example of how to use your role (for instance, with variables passe
 License
 -------
 
-BSD
+MIT
 
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+Created by Yaroslav Bannov
