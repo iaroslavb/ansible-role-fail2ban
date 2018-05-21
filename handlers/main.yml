@@ -1,0 +1,6 @@
+---
+# handlers file for ansible-role-fail2ban/
+
+- name: reload fail2ban
+  service: name=fail2ban state=reloaded
+

@@ -1,0 +1,17 @@
+---
+# tasks file for ansible-role-fail2ban/
+
+- name: install fail2ban
+  apt: name=fail2ban state=latest
+
+- name: fail2ban status
+  service: name=fail2ban state=started enabled=yes
+
+- name: add jail.conf
+  template:
+    src: jail.j2
+    dest: /etc/fail2ban/jail.conf
+    owner: root
+    group: root
+    mode: 0755
+  notify: reload fail2ban
